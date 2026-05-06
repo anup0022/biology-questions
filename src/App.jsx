@@ -141,21 +141,21 @@ function App() {
             <span className="hero-title-accent">MCQ Question Bank</span>
           </h1>
           <p className="hero-subtitle">
-            50 Multiple Choice Questions &mdash; Select the correct answer
+            70 Multiple Choice Questions &mdash; Select the correct answer
           </p>
           <div className="hero-stats">
             <div className="stat">
-              <span className="stat-number">10</span>
+              <span className="stat-number">20</span>
               <span className="stat-label">Diagram</span>
             </div>
             <div className="stat-divider"></div>
             <div className="stat">
-              <span className="stat-number">40</span>
+              <span className="stat-number">50</span>
               <span className="stat-label">Objective</span>
             </div>
             <div className="stat-divider"></div>
             <div className="stat">
-              <span className="stat-number">50</span>
+              <span className="stat-number">70</span>
               <span className="stat-label">Total</span>
             </div>
           </div>
@@ -246,19 +246,19 @@ function App() {
             className={`filter-tab ${activeTab === "all" ? "active" : ""}`}
             onClick={() => setActiveTab("all")}
           >
-            All <span className="tab-count">50</span>
+            All <span className="tab-count">{allQuestions.length}</span>
           </button>
           <button
             className={`filter-tab ${activeTab === "diagram" ? "active" : ""}`}
             onClick={() => setActiveTab("diagram")}
           >
-            Diagram <span className="tab-count">10</span>
+            Diagram <span className="tab-count">{allQuestions.filter(q => q.type === 'diagram').length}</span>
           </button>
           <button
             className={`filter-tab ${activeTab === "objective" ? "active" : ""}`}
             onClick={() => setActiveTab("objective")}
           >
-            Objective <span className="tab-count">40</span>
+            Objective <span className="tab-count">{allQuestions.filter(q => q.type === 'objective').length}</span>
           </button>
         </div>
       </section>
@@ -340,9 +340,10 @@ function App() {
                         const isSelected = userAnswer === optIdx;
                         const isCorrectOption = q.answer === optIdx;
                         let optionClass = "option";
+                        if (isAnswered && isSelected && isCorrect) optionClass += " option-correct";
+                        if (isAnswered && isSelected && !isCorrect) optionClass += " option-wrong";
+                        if (isAnswered && isCorrectOption && !isSelected) optionClass += " option-correct";
                         if (isSelected) optionClass += " option-selected";
-                        if (showResults && isCorrectOption) optionClass += " option-correct";
-                        if (showResults && isSelected && !isCorrect) optionClass += " option-wrong";
 
                         return (
                           <label
@@ -350,7 +351,7 @@ function App() {
                             className={optionClass}
                             onClick={(e) => {
                               e.stopPropagation();
-                              handleAnswerSelect(q.id, optIdx);
+                              if (!isAnswered) handleAnswerSelect(q.id, optIdx);
                             }}
                           >
                             <div className="option-radio">
@@ -358,12 +359,12 @@ function App() {
                             </div>
                             <span className="option-letter">{String.fromCharCode(65 + optIdx)}.</span>
                             <span className="option-text">{opt}</span>
-                            {showResults && isCorrectOption && (
+                            {isAnswered && isCorrectOption && (
                               <svg className="option-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                                 <polyline points="20,6 9,17 4,12" />
                               </svg>
                             )}
-                            {showResults && isSelected && !isCorrect && (
+                            {isAnswered && isSelected && !isCorrect && (
                               <svg className="option-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                                 <line x1="18" y1="6" x2="6" y2="18" />
                                 <line x1="6" y1="6" x2="18" y2="18" />
@@ -373,6 +374,24 @@ function App() {
                         );
                       })}
                     </div>
+                    {/* Show answer and explanation immediately after answering */}
+                    {isAnswered && (
+                      <div className={`answer-explanation ${isCorrect ? "answer-correct" : "answer-wrong"}`}>
+                        <div className="answer-header">
+                          <span className={`answer-badge ${isCorrect ? "badge-correct" : "badge-wrong"}`}>
+                            {isCorrect ? "✓ Correct!" : "✗ Incorrect"}
+                          </span>
+                          <span className="correct-answer-text">
+                            Answer: {String.fromCharCode(65 + q.answer)}. {q.options[q.answer]}
+                          </span>
+                        </div>
+                        {q.explanation && (
+                          <p className="explanation-text">
+                            <strong>Explanation:</strong> {q.explanation}
+                          </p>
+                        )}
+                      </div>
+                    )}
                     <div className="card-footer">
                       <span className="topic-label">{q.topic}</span>
                     </div>
@@ -389,7 +408,7 @@ function App() {
         <div className="footer-content">
           <p>Biology MCQ Question Bank &mdash; Class 8, 9 &amp; 10</p>
           <p className="footer-sub">
-            50 Questions | Select &amp; Download in DOC or PPT
+            70 Questions | Select &amp; Download in DOC or PPT
           </p>
         </div>
       </footer>

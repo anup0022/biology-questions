@@ -577,6 +577,77 @@ body {
 .card-footer { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .topic-label { font-size: 11px; color: var(--color-text-muted); font-weight: 500; border-bottom: 1px dashed var(--color-border); }
 
+/* ===== ANSWER EXPLANATION ===== */
+.answer-explanation {
+  margin-top: 12px;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border-left: 4px solid;
+  animation: fadeInUp 0.3s ease;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.answer-correct {
+  background: #E8F5E9;
+  border-left-color: var(--color-correct);
+}
+
+.answer-wrong {
+  background: #FFF3E0;
+  border-left-color: #E65100;
+}
+
+.answer-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.answer-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.badge-correct {
+  background: var(--color-correct);
+  color: #fff;
+}
+
+.badge-wrong {
+  background: #E65100;
+  color: #fff;
+}
+
+.correct-answer-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-correct);
+}
+
+.answer-wrong .correct-answer-text {
+  color: #2E7D32;
+}
+
+.explanation-text {
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+.explanation-text strong {
+  color: var(--color-text);
+}
+
 /* ===== FOOTER ===== */
 .footer { background: var(--color-text); padding: 32px 24px; text-align: center; }
 .footer-content p { color: rgba(255,255,255,0.8); font-size: 13px; font-weight: 500; }
