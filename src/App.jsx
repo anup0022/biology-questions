@@ -360,34 +360,34 @@ function App() {
                             <span className="option-letter">{String.fromCharCode(65 + optIdx)}.</span>
                             <span className="option-text">{opt}</span>
                             {isAnswered && isCorrectOption && (
-                              <svg className="option-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                                <polyline points="20,6 9,17 4,12" />
-                              </svg>
+                              <span className="option-correct-label">✓ Correct Answer</span>
                             )}
                             {isAnswered && isSelected && !isCorrect && (
-                              <svg className="option-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                                <line x1="18" y1="6" x2="6" y2="18" />
-                                <line x1="6" y1="6" x2="18" y2="18" />
-                              </svg>
+                              <span className="option-wrong-label">✗ Wrong</span>
                             )}
                           </label>
                         );
                       })}
                     </div>
-                    {/* Show answer and explanation immediately after answering */}
+                    {/* Show correct answer and explanation in green box after answering */}
                     {isAnswered && (
-                      <div className={`answer-explanation ${isCorrect ? "answer-correct" : "answer-wrong"}`}>
-                        <div className="answer-header">
-                          <span className={`answer-badge ${isCorrect ? "badge-correct" : "badge-wrong"}`}>
-                            {isCorrect ? "✓ Correct!" : "✗ Incorrect"}
-                          </span>
-                          <span className="correct-answer-text">
-                            Answer: {String.fromCharCode(65 + q.answer)}. {q.options[q.answer]}
-                          </span>
+                      <div className="answer-explanation-green">
+                        <div className="answer-green-header">
+                          <span className="answer-green-icon">✓</span>
+                          <span className="answer-green-title">Correct Answer</span>
                         </div>
+                        <p className="answer-green-text">
+                          <strong>{String.fromCharCode(65 + q.answer)}.</strong> {q.options[q.answer]}
+                        </p>
                         {q.explanation && (
-                          <p className="explanation-text">
-                            <strong>Explanation:</strong> {q.explanation}
+                          <div className="answer-green-explanation">
+                            <span className="explanation-label">Explanation:</span>
+                            <p className="explanation-content">{q.explanation}</p>
+                          </div>
+                        )}
+                        {!isCorrect && (
+                          <p className="your-answer-note">
+                            Your answer: <span className="your-wrong-answer">{String.fromCharCode(65 + userAnswer)}. {q.options[userAnswer]}</span>
                           </p>
                         )}
                       </div>
