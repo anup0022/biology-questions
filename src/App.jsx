@@ -3,7 +3,7 @@ import "./App.css";
 import questions from "./data/questions";
 import { generateDoc } from "./utils/generateDoc";
 import { generatePpt } from "./utils/generatePpt";
-import diagramComponents from "./components/Diagrams";
+import diagramByHint, { getDiagramComponent } from "./components/Diagrams";
 
 function App() {
   const [activeTab, setActiveTab] = useState("all");
@@ -320,9 +320,9 @@ function App() {
                   </div>
                   <div className="card-body">
                     <p className="question-text">{q.question}</p>
-                    {q.diagramHint && diagramComponents[q.id] && (
+                    {q.diagramHint && getDiagramComponent(q.diagramHint) && (
                       <div className="diagram-container">
-                        {React.createElement(diagramComponents[q.id])}
+                        {React.createElement(getDiagramComponent(q.diagramHint))}
                       </div>
                     )}
                     {q.diagramHint && (

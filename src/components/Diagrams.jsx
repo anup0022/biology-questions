@@ -104,17 +104,22 @@ export const XylemPhloemDiagram = () => (
   />
 );
 
-const diagramComponents = {
-  1: HeartDiagram,
-  2: NeuronDiagram,
-  3: DigestiveSystemDiagram,
-  4: PlantCellDiagram,
-  5: ExcretoryDiagram,
-  6: FlowerDiagram,
-  7: RespiratoryDiagram,
-  8: BrainDiagram,
-  9: EyeDiagram,
-  10: XylemPhloemDiagram,
+// Map diagramHint strings to components
+const diagramByHint = {
+  "Human Heart diagram": HeartDiagram,
+  "Structure of Neuron": NeuronDiagram,
+  "Human Digestive System": DigestiveSystemDiagram,
+  "Plant Cell": PlantCellDiagram,
+  "Human Excretory System": ExcretoryDiagram,
+  "Parts of a Flower": FlowerDiagram,
+  "Human Respiratory System": RespiratoryDiagram,
+  "Human Brain": BrainDiagram,
+  "Human Eye": EyeDiagram,
+  "Cross-section of Stem (Xylem & Phloem)": XylemPhloemDiagram,
 };
 
-export default diagramComponents;
+export function getDiagramComponent(diagramHint) {
+  return diagramByHint[diagramHint] || null;
+}
+
+export default diagramByHint;
