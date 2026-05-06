@@ -445,6 +445,26 @@ body {
 
 .question-text { font-size: 14px; line-height: 1.7; color: var(--color-text); font-weight: 500; margin-bottom: 12px; }
 
+/* ===== DIAGRAM CONTAINER ===== */
+.diagram-container {
+  background: #FAFFFE;
+  border: 1px solid #E0F2F1;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bio-diagram {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  max-height: 260px;
+}
+
 .diagram-badge {
   display: inline-flex;
   align-items: center;

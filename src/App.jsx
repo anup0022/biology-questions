@@ -1,8 +1,9 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import questions from "./data/questions";
 import { generateDoc } from "./utils/generateDoc";
 import { generatePpt } from "./utils/generatePpt";
+import diagramComponents from "./components/Diagrams";
 
 function App() {
   const [activeTab, setActiveTab] = useState("all");
@@ -319,6 +320,11 @@ function App() {
                   </div>
                   <div className="card-body">
                     <p className="question-text">{q.question}</p>
+                    {q.diagramHint && diagramComponents[q.id] && (
+                      <div className="diagram-container">
+                        {React.createElement(diagramComponents[q.id])}
+                      </div>
+                    )}
                     {q.diagramHint && (
                       <div className="diagram-badge">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="hint-icon">
