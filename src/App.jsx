@@ -141,11 +141,11 @@ function App() {
             <span className="hero-title-accent">MCQ Question Bank</span>
           </h1>
           <p className="hero-subtitle">
-            70 Multiple Choice Questions &mdash; Select the correct answer
+            85 Multiple Choice Questions &mdash; Select the correct answer
           </p>
           <div className="hero-stats">
             <div className="stat">
-              <span className="stat-number">20</span>
+              <span className="stat-number">35</span>
               <span className="stat-label">Diagram</span>
             </div>
             <div className="stat-divider"></div>
@@ -155,7 +155,7 @@ function App() {
             </div>
             <div className="stat-divider"></div>
             <div className="stat">
-              <span className="stat-number">70</span>
+              <span className="stat-number">85</span>
               <span className="stat-label">Total</span>
             </div>
           </div>
@@ -408,7 +408,7 @@ function App() {
         <div className="footer-content">
           <p>Biology MCQ Question Bank &mdash; Class 8, 9 &amp; 10</p>
           <p className="footer-sub">
-            70 Questions | Select &amp; Download in DOC or PPT
+            85 Questions | Select &amp; Download in DOC or PPT
           </p>
         </div>
       </footer>

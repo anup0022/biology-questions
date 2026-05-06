@@ -300,6 +300,231 @@ const questions = {
       topic: "Life Processes - Transportation",
       diagramHint: "Cross-section of Stem (Xylem & Phloem)",
     },
+    {
+      id: 71,
+      question: "In the heart diagram, a baby is born with a hole in the interventricular septum (Ventricular Septal Defect). What will happen to the blood in the left ventricle?",
+      options: [
+        "All blood will flow to the lungs only",
+        "Oxygenated blood from left ventricle will mix with deoxygenated blood in right ventricle, reducing oxygen supply to body",
+        "Blood will flow backward into the left atrium",
+        "The heart will stop beating immediately"
+      ],
+      answer: 1,
+      explanation: "The left ventricle has higher pressure than the right. Through the septal hole, oxygenated blood is shunted from left → right ventricle (left-to-right shunt). This causes mixing of oxygenated and deoxygenated blood. The body receives partially deoxygenated blood (cyanosis in severe cases), and the lungs receive excess blood flow leading to pulmonary hypertension over time.",
+      class: 10,
+      topic: "Life Processes - Transportation",
+      diagramHint: "Human Heart diagram",
+    },
+    {
+      id: 72,
+      question: "In the heart diagram, during exercise the cardiac output increases from 5L/min to 25L/min. If the heart rate increases from 72 to 180 bpm, the stroke volume must have changed from ~70mL to approximately:",
+      options: [
+        "70 mL (no change)", 
+        "139 mL (nearly doubled)", 
+        "200 mL (tripled)", 
+        "50 mL (decreased)"
+      ],
+      answer: 1,
+      explanation: "Cardiac output = Heart rate × Stroke volume. At rest: 72 × 70mL = ~5040 mL/min ≈ 5L. During exercise: 25000 mL ÷ 180 = ~139 mL per beat. The heart achieves this by stronger contractions (Frank-Starling mechanism) - more blood fills ventricles during diastole, stretching the muscle, causing more forceful ejection.",
+      class: 10,
+      topic: "Life Processes - Transportation",
+      diagramHint: "Human Heart diagram",
+    },
+    {
+      id: 73,
+      question: "From the neuron diagram, Multiple Sclerosis (MS) is a disease where the immune system attacks and destroys myelin sheaths. Which specific symptom would appear FIRST and why?",
+      options: [
+        "Loss of memory because neurons in brain lose their nuclei",
+        "Slower nerve impulse conduction causing numbness, tingling, and loss of coordination",
+        "Complete inability to breathe because all neurons die",
+        "Loss of vision due to corneal damage"
+      ],
+      answer: 1,
+      explanation: "Myelin sheaths enable fast saltatory conduction (120 m/s). When myelin is destroyed (demyelination), impulses must travel continuously through the exposed axon (much slower, ~2 m/s). Early symptoms include numbness/tingling (sensory delay), muscle weakness, and coordination problems. Neurons themselves don't die initially - just their insulation is damaged.",
+      class: 10,
+      topic: "Control and Coordination",
+      diagramHint: "Structure of Neuron",
+    },
+    {
+      id: 74,
+      question: "In the neuron diagram, a synapse uses acetylcholine (ACh) as neurotransmitter. A nerve gas (like sarin) inhibits acetylcholinesterase enzyme that normally breaks down ACh. What happens at the synapse?",
+      options: [
+        "No impulse will be generated in the post-synaptic neuron",
+        "ACh remains permanently in the synapse, causing continuous uncontrolled stimulation of the next neuron/muscle",
+        "The pre-synaptic neuron explodes due to excess chemicals",
+        "Myelin sheath grows thicker blocking all transmission"
+      ],
+      answer: 1,
+      explanation: "Normally: ACh is released → binds receptor → impulse transmitted → acetylcholinesterase breaks down ACh → stimulation stops. If the enzyme is blocked: ACh accumulates in the synapse, continuously stimulating the post-synaptic cell. In muscles: this causes sustained contraction (paralysis/spasms), inability to relax muscles, respiratory failure. This is how nerve agents kill.",
+      class: 10,
+      topic: "Control and Coordination",
+      diagramHint: "Structure of Neuron",
+    },
+    {
+      id: 75,
+      question: "In the digestive system diagram, the hepatic portal vein carries blood from the intestines directly to the liver BEFORE it enters general circulation. Why is this arrangement critical?",
+      options: [
+        "To add extra oxygen to the blood for better nutrient absorption",
+        "So the liver can detoxify harmful substances, regulate glucose levels, and process nutrients before they reach other organs",
+        "Because the liver needs nutrients before any other organ",
+        "To increase blood pressure for better brain supply"
+      ],
+      answer: 1,
+      explanation: "The hepatic portal system is a 'first-pass' filter. Intestinal blood contains: absorbed nutrients (glucose, amino acids), toxins, drugs, alcohol, and bacteria. The liver: (1) stores/releases glucose (maintaining blood sugar), (2) converts ammonia to urea, (3) detoxifies drugs/alcohol, (4) destroys bacteria via Kupffer cells. Without this, toxic substances would directly damage the brain and other organs.",
+      class: 10,
+      topic: "Life Processes - Nutrition",
+      diagramHint: "Human Digestive System",
+    },
+    {
+      id: 76,
+      question: "From the digestive system diagram, a patient has their gallbladder surgically removed (cholecystectomy). They can still digest fats because:",
+      options: [
+        "The stomach now produces bile instead",
+        "The liver still produces bile continuously, which drips directly into the duodenum through the common bile duct",
+        "Fat digestion occurs only in the mouth by salivary lipase",
+        "The pancreas takes over bile production entirely"
+      ],
+      answer: 1,
+      explanation: "The gallbladder only STORES and CONCENTRATES bile - it doesn't produce it. The liver continuously produces bile. After cholecystectomy, bile drips constantly into the duodenum via the common bile duct (instead of being released in a concentrated burst). Patients can still digest fats, but may have difficulty with very large fatty meals since concentrated bile is unavailable.",
+      class: 10,
+      topic: "Life Processes - Nutrition",
+      diagramHint: "Human Digestive System",
+    },
+    {
+      id: 77,
+      question: "In the plant cell diagram, during drought conditions, the stomata close to prevent water loss. However, this creates a problem for the cell. What is the immediate biochemical consequence?",
+      options: [
+        "Chloroplasts produce more glucose than normal",
+        "CO₂ cannot enter the leaf, so the Calvin cycle slows down and O₂ from light reactions accumulates causing photorespiration",
+        "Mitochondria stop working because they need open stomata",
+        "The nucleus divides rapidly to compensate for stress"
+      ],
+      answer: 1,
+      explanation: "Closed stomata block CO₂ entry. Without CO₂, the Calvin cycle (dark reactions) cannot fix carbon. Meanwhile, light reactions continue producing O₂. RuBisCO enzyme starts fixing O₂ instead of CO₂ (photorespiration), which WASTES energy and produces no useful glucose. This is why C4 plants (evolved in hot climates) have mechanisms to concentrate CO₂ and avoid photorespiration.",
+      class: 10,
+      topic: "Life Processes - Nutrition",
+      diagramHint: "Plant Cell",
+    },
+    {
+      id: 78,
+      question: "From the plant cell diagram, cyanobacteria (blue-green algae) have no chloroplasts but can still perform photosynthesis. Where does photosynthesis occur in them, and what does this suggest about chloroplast evolution?",
+      options: [
+        "In the nucleus; chloroplasts evolved from nuclear material",
+        "On internal membrane folds (thylakoids free in cytoplasm); chloroplasts likely evolved from endosymbiotic cyanobacteria engulfed by ancestral eukaryotic cells",
+        "In the cell wall; chloroplasts are modified cell wall fragments",
+        "In ribosomes; chloroplasts evolved from RNA molecules"
+      ],
+      answer: 1,
+      explanation: "Cyanobacteria have thylakoid membranes (with chlorophyll) free in their cytoplasm - no membrane-bound chloroplasts. The endosymbiotic theory proposes: an ancestral eukaryotic cell engulfed a cyanobacterium, which survived inside and eventually became the chloroplast. Evidence: chloroplasts have double membranes, their own circular DNA, 70S ribosomes, and divide independently - all matching bacterial features.",
+      class: 10,
+      topic: "Life Processes - Nutrition",
+      diagramHint: "Plant Cell",
+    },
+    {
+      id: 79,
+      question: "In the excretory system diagram, a patient's GFR (Glomerular Filtration Rate) is 125 mL/min, producing 180 litres of filtrate per day. But only 1.5 litres of urine is produced. What happens to the remaining 178.5 litres?",
+      options: [
+        "It is excreted as sweat through the skin",
+        "It is reabsorbed back into blood through the tubular epithelium of nephrons (selective reabsorption)",
+        "It evaporates inside the kidneys due to body heat",
+        "It is stored in the bladder for emergency use"
+      ],
+      answer: 1,
+      explanation: "The nephron tubules (PCT, Loop of Henle, DCT, Collecting duct) reabsorb ~99% of filtrate. PCT reabsorbs glucose, amino acids, Na⁺, water (obligatory). Loop of Henle creates concentration gradient. DCT/Collecting duct perform hormone-regulated reabsorption (ADH for water, aldosterone for Na⁺). Only waste products (urea, excess ions, drugs) remain in the final 1.5L urine.",
+      class: 10,
+      topic: "Life Processes - Excretion",
+      diagramHint: "Human Excretory System",
+    },
+    {
+      id: 80,
+      question: "In the excretory system diagram, why does glucose appear in the urine (glycosuria) of diabetic patients even though the kidneys are functioning normally?",
+      options: [
+        "The kidneys actively secrete glucose into urine in diabetes",
+        "Blood glucose exceeds the renal threshold (~180 mg/dL); transporters in PCT become saturated and cannot reabsorb all filtered glucose",
+        "Glucose is converted to urea in the kidney",
+        "The bladder converts stored urine glucose from blood"
+      ],
+      answer: 1,
+      explanation: "Normally, ALL filtered glucose is reabsorbed in the PCT by SGLT (sodium-glucose linked transporters). These have a maximum capacity (Tm = transport maximum). In diabetes, blood glucose is very high (>180 mg/dL = renal threshold), so more glucose is filtered than transporters can handle. Excess glucose remains in urine. The kidney itself is working correctly - it's simply overwhelmed.",
+      class: 10,
+      topic: "Life Processes - Excretion",
+      diagramHint: "Human Excretory System",
+    },
+    {
+      id: 81,
+      question: "In the flower diagram, some flowers show a phenomenon where the stamens mature before the pistil (protandry). What is the evolutionary advantage of this timing difference?",
+      options: [
+        "It ensures the flower produces more nectar",
+        "It prevents self-pollination, promoting genetic diversity through cross-pollination",
+        "It helps the flower grow larger petals",
+        "It increases the number of seeds produced per flower"
+      ],
+      answer: 1,
+      explanation: "In protandry (stamens mature first), by the time the stigma is receptive, the flower's own pollen has already been shed and dispersed. The stigma can only receive pollen from OTHER flowers, ensuring cross-pollination. This outbreeding mechanism increases genetic variation in offspring, providing better adaptation potential to changing environments. Similar logic applies to protogyny (pistil first).",
+      class: 10,
+      topic: "How Do Organisms Reproduce",
+      diagramHint: "Parts of a Flower",
+    },
+    {
+      id: 82,
+      question: "In the respiratory system diagram, premature babies often suffer from Respiratory Distress Syndrome (RDS) because their alveoli collapse. Which substance is deficient?",
+      options: [
+        "Haemoglobin in their blood",
+        "Surfactant - a phospholipid that reduces surface tension in alveoli, preventing their collapse",
+        "Mucus in the bronchi",
+        "Cartilage rings in the trachea"
+      ],
+      answer: 1,
+      explanation: "Pulmonary surfactant is produced by Type II alveolar cells from ~35 weeks gestation. It reduces surface tension of the thin water film lining alveoli, preventing them from collapsing during exhalation (atelectasis). Premature babies (<34 weeks) lack sufficient surfactant → alveoli collapse with each breath → enormous effort needed to re-inflate → respiratory failure. Treatment: artificial surfactant + ventilation.",
+      class: 10,
+      topic: "Life Processes - Respiration",
+      diagramHint: "Human Respiratory System",
+    },
+    {
+      id: 83,
+      question: "From the respiratory system diagram, carbon monoxide (CO) poisoning is lethal even though lungs function perfectly. Why?",
+      options: [
+        "CO destroys alveolar walls causing emphysema",
+        "CO binds to haemoglobin with 200x greater affinity than O₂, forming carboxyhaemoglobin which cannot carry oxygen to tissues",
+        "CO blocks the trachea physically preventing air entry",
+        "CO increases oxygen concentration in blood causing oxygen toxicity"
+      ],
+      answer: 1,
+      explanation: "CO has approximately 200-250 times greater affinity for haemoglobin's iron (Fe²⁺) than O₂. Even at low concentrations, CO rapidly binds haemoglobin forming stable carboxyhaemoglobin (COHb). This molecule cannot release CO easily and cannot carry O₂. Tissues are starved of oxygen (histotoxic hypoxia) despite normal breathing and lung function. It's odourless and colourless, making it a 'silent killer'.",
+      class: 10,
+      topic: "Life Processes - Respiration",
+      diagramHint: "Human Respiratory System",
+    },
+    {
+      id: 84,
+      question: "In the brain diagram, the medulla oblongata controls involuntary actions like breathing and heartbeat. If a person can be kept alive on a ventilator after brain death, which part of the brain has been destroyed?",
+      options: [
+        "Only the cerebellum",
+        "The brainstem (medulla oblongata and pons) which controls essential life-sustaining reflexes",
+        "Only the frontal lobe of cerebrum",
+        "The hypothalamus only"
+      ],
+      answer: 1,
+      explanation: "Brain death = irreversible cessation of ALL brain function including brainstem. The brainstem (medulla + pons) controls: breathing rhythm, heart rate, blood pressure, swallowing, and consciousness arousal. When destroyed, spontaneous breathing stops permanently. A ventilator can mechanically inflate lungs and the heart may continue briefly (it has its own pacemaker), but the person cannot recover. This is the legal definition of death in most countries.",
+      class: 10,
+      topic: "Control and Coordination",
+      diagramHint: "Human Brain",
+    },
+    {
+      id: 85,
+      question: "From the brain diagram, a patient has damage to Broca's area (left frontal lobe) but Wernicke's area (left temporal lobe) is intact. What specific language problem will they have?",
+      options: [
+        "They cannot understand spoken language but can speak fluently",
+        "They can understand language perfectly but cannot produce fluent speech (non-fluent/expressive aphasia)",
+        "They become completely deaf",
+        "They can only speak in their mother tongue, not other languages"
+      ],
+      answer: 1,
+      explanation: "Broca's area controls speech PRODUCTION (motor programming of speech muscles). Wernicke's area controls speech COMPREHENSION. With Broca's area damaged: patient understands everything said to them, knows what they want to say, but cannot articulate words properly. Speech is slow, effortful, and telegraphic ('want...water...'). This is non-fluent/expressive aphasia, distinct from Wernicke's aphasia (fluent but nonsensical speech).",
+      class: 10,
+      topic: "Control and Coordination",
+      diagramHint: "Human Brain",
+    },
   ],
 
   objective: [
