@@ -465,6 +465,34 @@ body {
   max-height: 260px;
 }
 
+.bio-diagram-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.bio-diagram-img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: #fff;
+  padding: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.bio-diagram-caption {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
 .diagram-badge {
   display: inline-flex;
   align-items: center;

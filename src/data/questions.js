@@ -618,6 +618,116 @@ const questions = {
       class: 8,
       topic: "Pollution of Air and Water",
     },
+    {
+      id: 51,
+      question: "A student sets up two test tubes: Tube A has boiled and cooled leaf extract, Tube B has fresh leaf extract. Both are kept in sunlight with CO2 supply. After 4 hours, only Tube B shows starch formation. What does boiling destroy that prevents photosynthesis?",
+      options: [
+        "Chlorophyll pigment, which is heat-stable",
+        "Enzymes required for the Calvin cycle (dark reactions)",
+        "The cell wall structure",
+        "Water molecules inside the cells"
+      ],
+      answer: 1,
+      class: 10,
+      topic: "Life Processes - Nutrition",
+    },
+    {
+      id: 52,
+      question: "In a family, the father has blood group A (heterozygous IAi) and the mother has blood group B (heterozygous IBi). What is the probability that their child will have blood group O?",
+      options: ["0%", "25%", "50%", "75%"],
+      answer: 1,
+      class: 10,
+      topic: "Heredity and Evolution",
+    },
+    {
+      id: 53,
+      question: "During heavy exercise, the breathing rate increases from 15 to 40 breaths/min. The primary stimulus that triggers this increase is detected by the brain when:",
+      options: [
+        "Oxygen level in blood rises above normal",
+        "CO2 concentration in blood increases, lowering blood pH",
+        "Heart rate decreases below resting level",
+        "Body temperature drops significantly"
+      ],
+      answer: 1,
+      class: 10,
+      topic: "Life Processes - Respiration",
+    },
+    {
+      id: 54,
+      question: "A plant heterozygous for two traits (TtRr) is crossed with a double recessive plant (ttrr). This is called a test cross. The expected phenotypic ratio of offspring is:",
+      options: ["9:3:3:1", "1:1:1:1", "3:1", "1:2:1"],
+      answer: 1,
+      class: 10,
+      topic: "Heredity and Evolution",
+    },
+    {
+      id: 55,
+      question: "A person's kidney fails and they undergo dialysis. The dialysis fluid contains glucose and salts at the same concentration as normal blood, but NO urea. Why is this composition critical?",
+      options: [
+        "To add extra glucose to the patient's blood",
+        "So urea diffuses out from blood into fluid (down concentration gradient) while useful substances are retained",
+        "To increase blood pressure in the patient",
+        "To destroy bacteria in the blood"
+      ],
+      answer: 1,
+      class: 10,
+      topic: "Life Processes - Excretion",
+    },
+    {
+      id: 56,
+      question: "Mendel crossed pure tall plants (TT) with pure dwarf plants (tt). All F1 were tall. When F1 plants were self-pollinated, F2 showed 3:1 ratio. If Mendel had instead crossed F1 tall with pure dwarf (tt), what ratio would he get?",
+      options: ["3:1 (tall:dwarf)", "1:1 (tall:dwarf)", "All tall", "1:2:1"],
+      answer: 1,
+      class: 10,
+      topic: "Heredity and Evolution",
+    },
+    {
+      id: 57,
+      question: "In the human female reproductive system, fertilization normally occurs in the fallopian tube. If both fallopian tubes are blocked but ovaries and uterus are functional, which assisted reproduction technique would be most appropriate?",
+      options: [
+        "Artificial insemination (IUI)",
+        "In Vitro Fertilization (IVF) - fertilize egg outside and implant embryo in uterus",
+        "Hormone therapy to unblock tubes",
+        "Surrogacy using another woman's egg"
+      ],
+      answer: 1,
+      class: 10,
+      topic: "How Do Organisms Reproduce",
+    },
+    {
+      id: 58,
+      question: "The human genome has approximately 20,000-25,000 genes but only about 1.5% of DNA codes for proteins. A mutation in the non-coding region is MOST LIKELY to:",
+      options: [
+        "Always cause a lethal disease",
+        "Have no visible effect on the organism (be neutral)",
+        "Immediately cause cancer",
+        "Change the person's blood group"
+      ],
+      answer: 1,
+      class: 10,
+      topic: "Heredity and Evolution",
+    },
+    {
+      id: 59,
+      question: "In an experiment, a student covers both surfaces of a leaf with vaseline. Another leaf has only the lower surface covered. A third leaf is left uncovered. Which leaf will show maximum wilting first?",
+      options: [
+        "Both surfaces covered (no transpiration possible)",
+        "Lower surface covered (most stomata blocked)",
+        "Uncovered leaf (maximum transpiration from both surfaces)",
+        "All three will wilt at the same rate"
+      ],
+      answer: 2,
+      class: 10,
+      topic: "Life Processes - Transportation",
+    },
+    {
+      id: 60,
+      question: "ATP is called the 'energy currency' of cells. During aerobic respiration, one glucose molecule produces approximately 36-38 ATP molecules. During anaerobic respiration in yeast, the same glucose produces only:",
+      options: ["2 ATP molecules", "12 ATP molecules", "19 ATP molecules", "36 ATP molecules"],
+      answer: 0,
+      class: 10,
+      topic: "Life Processes - Respiration",
+    },
   ],
 };
 
