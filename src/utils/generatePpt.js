@@ -69,7 +69,7 @@ export const generatePpt = async (selectedQuestions) => {
     fontSize: 42, bold: true, color: colors.white,
     fontFace: "Times New Roman", align: "left", valign: "middle",
   });
-  titleSlide.addText(`${selectedQuestions.length} Selected Questions | Class 8, 9, 10`, {
+  titleSlide.addText(`${selectedQuestions.length} Selected Questions | Class 11 & 12 | Hard Level`, {
     x: 0.5, y: 3.5, w: 9, h: 0.8,
     fontSize: 18, color: colors.light,
     fontFace: "Times New Roman", italic: true,
