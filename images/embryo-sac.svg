@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, sans-serif">
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  <text x="400" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#1565C0">Structure of Mature Embryo Sac (Female Gametophyte)</text>
+  
+  <!-- Ovule outline -->
+  <ellipse cx="400" cy="270" rx="200" ry="220" fill="#FFF8E1" stroke="#795548" stroke-width="3"/>
+  
+  <!-- Integuments -->
+  <ellipse cx="400" cy="270" rx="185" ry="205" fill="none" stroke="#8D6E63" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="610" y="130" font-size="11" fill="#795548">A - Outer Integument</text>
+  <line x1="590" y1="135" x2="560" y2="160" stroke="#795548" stroke-width="1"/>
+  
+  <text x="610" y="155" font-size="11" fill="#8D6E63">B - Inner Integument</text>
+  <line x1="590" y1="160" x2="545" y2="175" stroke="#8D6E63" stroke-width="1"/>
+  
+  <!-- Micropyle -->
+  <path d="M370 52 L400 60 L430 52" stroke="#E53935" stroke-width="3" fill="none"/>
+  <text x="400" y="42" text-anchor="middle" font-size="12" font-weight="bold" fill="#E53935">C - Micropyle</text>
+  
+  <!-- Chalazal end -->
+  <text x="400" y="495" text-anchor="middle" font-size="11" fill="#795548">D - Chalazal End</text>
+  
+  <!-- Egg apparatus (micropylar end) -->
+  <!-- Egg cell -->
+  <ellipse cx="400" cy="130" rx="25" ry="30" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+  <text x="400" y="135" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">Egg</text>
+  <text x="400" y="148" text-anchor="middle" font-size="8" fill="#fff">(n)</text>
+  
+  <line x1="425" y1="125" x2="510" y2="105" stroke="#333" stroke-width="1"/>
+  <text x="515" y="100" font-size="11" fill="#2E7D32">E - Egg Cell (n)</text>
+  <text x="515" y="115" font-size="9" fill="#666">(Female gamete)</text>
+  
+  <!-- Synergids -->
+  <ellipse cx="365" cy="105" rx="18" ry="22" fill="#81C784" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="365" y="108" text-anchor="middle" font-size="8" fill="#fff">Syn</text>
+  
+  <ellipse cx="435" cy="105" rx="18" ry="22" fill="#81C784" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="435" y="108" text-anchor="middle" font-size="8" fill="#fff">Syn</text>
+  
+  <line x1="350" y1="90" x2="250" y2="75" stroke="#333" stroke-width="1"/>
+  <text x="140" y="70" font-size="11" fill="#388E3C">F - Synergids (2) with</text>
+  <text x="140" y="85" font-size="11" fill="#388E3C">Filiform Apparatus</text>
+  <text x="140" y="100" font-size="9" fill="#666">(Guide pollen tube entry)</text>
+  
+  <!-- Filiform apparatus marks -->
+  <line x1="365" y1="83" x2="365" y2="75" stroke="#388E3C" stroke-width="2"/>
+  <line x1="360" y1="83" x2="360" y2="78" stroke="#388E3C" stroke-width="1.5"/>
+  <line x1="370" y1="83" x2="370" y2="78" stroke="#388E3C" stroke-width="1.5"/>
+  <line x1="435" y1="83" x2="435" y2="75" stroke="#388E3C" stroke-width="2"/>
+  <line x1="430" y1="83" x2="430" y2="78" stroke="#388E3C" stroke-width="1.5"/>
+  <line x1="440" y1="83" x2="440" y2="78" stroke="#388E3C" stroke-width="1.5"/>
+  
+  <!-- Central cell with polar nuclei -->
+  <ellipse cx="400" cy="270" rx="80" ry="100" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="400" y="230" text-anchor="middle" font-size="10" fill="#1565C0">Central Cell</text>
+  
+  <!-- Two polar nuclei -->
+  <circle cx="385" cy="270" r="15" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+  <text x="385" y="274" text-anchor="middle" font-size="8" fill="#fff">PN</text>
+  <circle cx="415" cy="270" r="15" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+  <text x="415" y="274" text-anchor="middle" font-size="8" fill="#fff">PN</text>
+  
+  <line x1="430" y1="265" x2="550" y2="250" stroke="#333" stroke-width="1"/>
+  <text x="555" y="245" font-size="11" fill="#1565C0">G - 2 Polar Nuclei (n+n)</text>
+  <text x="555" y="260" font-size="9" fill="#666">(Fuse with sperm → 3n Endosperm)</text>
+  
+  <!-- Antipodal cells -->
+  <circle cx="375" cy="400" r="18" fill="#FF7043" stroke="#E64A19" stroke-width="1.5"/>
+  <text x="375" y="404" text-anchor="middle" font-size="8" fill="#fff">Ant</text>
+  <circle cx="400" cy="420" r="18" fill="#FF7043" stroke="#E64A19" stroke-width="1.5"/>
+  <text x="400" y="424" text-anchor="middle" font-size="8" fill="#fff">Ant</text>
+  <circle cx="425" cy="400" r="18" fill="#FF7043" stroke="#E64A19" stroke-width="1.5"/>
+  <text x="425" y="404" text-anchor="middle" font-size="8" fill="#fff">Ant</text>
+  
+  <line x1="440" y1="415" x2="550" y2="430" stroke="#333" stroke-width="1"/>
+  <text x="555" y="425" font-size="11" fill="#E64A19">H - Antipodal Cells (3)</text>
+  <text x="555" y="440" font-size="9" fill="#666">(Chalazal end, nutritive)</text>
+  
+  <!-- Nucellus -->
+  <text x="140" y="270" font-size="11" fill="#795548">I - Nucellus</text>
+  <line x1="195" y1="265" x2="225" y2="265" stroke="#795548" stroke-width="1" marker-end="url(#arw)"/>
+  
+  <!-- Summary box -->
+  <rect x="30" y="450" width="740" height="40" fill="#E8F5E9" rx="5" stroke="#2E7D32"/>
+  <text x="400" y="468" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">7 Cells, 8 Nuclei: 1 Egg + 2 Synergids + 3 Antipodals + 1 Central Cell (2 polar nuclei)</text>
+  <text x="400" y="484" text-anchor="middle" font-size="10" fill="#666">Double Fertilization: Sperm + Egg → Zygote (2n) | Sperm + 2 Polar Nuclei → PEN (3n) → Endosperm</text>
+  
+  <defs>
+    <marker id="arw" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#795548"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, sans-serif">
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1565C0">Structure of Antibody (Immunoglobulin)</text>
+  
+  <!-- Y-shape body -->
+  <path d="M400 420 L400 280 L300 180 L250 120" stroke="#2E7D32" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M400 280 L500 180 L550 120" stroke="#2E7D32" stroke-width="8" fill="none" stroke-linecap="round"/>
+  
+  <!-- Light chains -->
+  <path d="M300 180 L270 140" stroke="#1565C0" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M500 180 L530 140" stroke="#1565C0" stroke-width="6" fill="none" stroke-linecap="round"/>
+  
+  <!-- Antigen binding sites -->
+  <circle cx="250" cy="115" r="15" fill="#E53935" stroke="#B71C1C" stroke-width="2"/>
+  <circle cx="270" cy="135" r="12" fill="#FF7043" stroke="#E64A19" stroke-width="2"/>
+  <circle cx="550" cy="115" r="15" fill="#E53935" stroke="#B71C1C" stroke-width="2"/>
+  <circle cx="530" cy="135" r="12" fill="#FF7043" stroke="#E64A19" stroke-width="2"/>
+  
+  <!-- Disulfide bonds -->
+  <line x1="370" y1="300" x2="430" y2="300" stroke="#FFA000" stroke-width="3" stroke-dasharray="5,3"/>
+  <line x1="370" y1="320" x2="430" y2="320" stroke="#FFA000" stroke-width="3" stroke-dasharray="5,3"/>
+  
+  <!-- Fc region -->
+  <rect x="380" y="380" width="40" height="40" fill="#7B1FA2" opacity="0.3" rx="5"/>
+  
+  <!-- Labels with lines -->
+  <line x1="250" y1="100" x2="150" y2="60" stroke="#333" stroke-width="1"/>
+  <text x="60" y="55" font-size="12" fill="#333">A - Antigen Binding Site</text>
+  <text x="60" y="72" font-size="11" fill="#666">(Variable Region)</text>
+  
+  <line x1="550" y1="100" x2="650" y2="60" stroke="#333" stroke-width="1"/>
+  <text x="600" y="55" font-size="12" fill="#333">A - Antigen Binding Site</text>
+  
+  <line x1="270" y1="170" x2="130" y2="170" stroke="#333" stroke-width="1"/>
+  <text x="40" y="165" font-size="12" fill="#1565C0">B - Light Chain (L)</text>
+  
+  <line x1="400" y1="350" x2="550" y2="380" stroke="#333" stroke-width="1"/>
+  <text x="560" y="380" font-size="12" fill="#2E7D32">C - Heavy Chain (H)</text>
+  
+  <line x1="400" y1="310" x2="550" y2="310" stroke="#333" stroke-width="1"/>
+  <text x="560" y="310" font-size="12" fill="#FFA000">D - Disulfide Bonds (S-S)</text>
+  
+  <line x1="400" y1="400" x2="550" y2="430" stroke="#333" stroke-width="1"/>
+  <text x="560" y="430" font-size="12" fill="#7B1FA2">E - Fc Region</text>
+  <text x="560" y="447" font-size="11" fill="#666">(Constant Region)</text>
+  
+  <line x1="400" y1="240" x2="200" y2="240" stroke="#333" stroke-width="1"/>
+  <text x="40" y="235" font-size="12" fill="#333">F - Hinge Region</text>
+  
+  <!-- Fab and Fc labels -->
+  <rect x="150" y="95" width="50" height="20" fill="#E3F2FD" rx="3"/>
+  <text x="175" y="110" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565C0">Fab</text>
+  
+  <rect x="375" y="430" width="50" height="20" fill="#F3E5F5" rx="3"/>
+  <text x="400" y="445" text-anchor="middle" font-size="11" font-weight="bold" fill="#7B1FA2">Fc</text>
+  
+  <!-- Legend -->
+  <rect x="20" y="450" width="760" height="40" fill="#E8F5E9" rx="5"/>
+  <text x="400" y="475" text-anchor="middle" font-size="12" fill="#333">IgG antibody: 2 Heavy Chains + 2 Light Chains | Held by Disulfide bonds | Fab = Antigen binding | Fc = Complement activation</text>
+</svg>
