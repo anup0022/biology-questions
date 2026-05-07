@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, sans-serif">
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  <text x="400" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#1565C0">Photoperiodism &amp; Phytochrome System</text>
+  
+  <!-- SDP Section -->
+  <rect x="30" y="50" width="360" height="200" fill="#FFF3E0" rx="8" stroke="#FF6F00" stroke-width="2"/>
+  <text x="210" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill="#E65100">Short Day Plant (SDP)</text>
+  <text x="210" y="93" text-anchor="middle" font-size="11" fill="#666">(Long Night Plant)</text>
+  
+  <!-- SDP - Flowers -->
+  <rect x="50" y="105" width="320" height="30" fill="#fff" rx="4" stroke="#ccc"/>
+  <rect x="50" y="105" width="120" height="30" fill="#FFF176" rx="4"/>
+  <text x="110" y="125" text-anchor="middle" font-size="10" fill="#333">Light (Short)</text>
+  <rect x="170" y="105" width="200" height="30" fill="#263238" rx="4"/>
+  <text x="270" y="125" text-anchor="middle" font-size="10" fill="#fff">Dark Period (Long - Critical)</text>
+  <text x="385" y="125" font-size="12" fill="#2E7D32" font-weight="bold">✓ Flowers</text>
+  
+  <!-- SDP - No Flowers (light break) -->
+  <rect x="50" y="145" width="320" height="30" fill="#fff" rx="4" stroke="#ccc"/>
+  <rect x="50" y="145" width="120" height="30" fill="#FFF176" rx="4"/>
+  <text x="110" y="165" text-anchor="middle" font-size="10" fill="#333">Light</text>
+  <rect x="170" y="145" width="85" height="30" fill="#263238" rx="4"/>
+  <rect x="255" y="145" width="15" height="30" fill="#F44336" rx="2"/>
+  <rect x="270" y="145" width="100" height="30" fill="#263238" rx="4"/>
+  <text x="258" y="140" font-size="9" fill="#F44336">Flash</text>
+  <text x="385" y="165" font-size="12" fill="#E53935" font-weight="bold">✗ No Flower</text>
+  
+  <!-- SDP explanation -->
+  <text x="210" y="200" text-anchor="middle" font-size="11" fill="#333">A - Night break (red light flash) prevents</text>
+  <text x="210" y="215" text-anchor="middle" font-size="11" fill="#333">flowering by converting Pfr → Pr</text>
+  <text x="210" y="235" text-anchor="middle" font-size="10" fill="#666">Examples: Chrysanthemum, Rice, Tobacco</text>
+  
+  <!-- LDP Section -->
+  <rect x="410" y="50" width="370" height="200" fill="#E3F2FD" rx="8" stroke="#1565C0" stroke-width="2"/>
+  <text x="595" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565C0">Long Day Plant (LDP)</text>
+  <text x="595" y="93" text-anchor="middle" font-size="11" fill="#666">(Short Night Plant)</text>
+  
+  <!-- LDP - Flowers -->
+  <rect x="430" y="105" width="320" height="30" fill="#fff" rx="4" stroke="#ccc"/>
+  <rect x="430" y="105" width="220" height="30" fill="#FFF176" rx="4"/>
+  <text x="540" y="125" text-anchor="middle" font-size="10" fill="#333">Light (Long)</text>
+  <rect x="650" y="105" width="100" height="30" fill="#263238" rx="4"/>
+  <text x="700" y="125" text-anchor="middle" font-size="10" fill="#fff">Dark (Short)</text>
+  <text x="765" y="125" font-size="12" fill="#2E7D32" font-weight="bold">✓</text>
+  
+  <!-- LDP - No Flowers -->
+  <rect x="430" y="145" width="320" height="30" fill="#fff" rx="4" stroke="#ccc"/>
+  <rect x="430" y="145" width="120" height="30" fill="#FFF176" rx="4"/>
+  <text x="490" y="165" text-anchor="middle" font-size="10" fill="#333">Light (Short)</text>
+  <rect x="550" y="145" width="200" height="30" fill="#263238" rx="4"/>
+  <text x="650" y="165" text-anchor="middle" font-size="10" fill="#fff">Dark (Long)</text>
+  <text x="765" y="165" font-size="12" fill="#E53935" font-weight="bold">✗</text>
+  
+  <text x="595" y="200" text-anchor="middle" font-size="11" fill="#333">B - Requires short uninterrupted dark period</text>
+  <text x="595" y="218" text-anchor="middle" font-size="11" fill="#333">Pfr (active form) promotes flowering</text>
+  <text x="595" y="235" text-anchor="middle" font-size="10" fill="#666">Examples: Wheat, Spinach, Radish, Henbane</text>
+  
+  <!-- Phytochrome conversion diagram -->
+  <rect x="80" y="270" width="640" height="110" fill="#F1F8E9" rx="8" stroke="#2E7D32" stroke-width="2"/>
+  <text x="400" y="295" text-anchor="middle" font-size="14" font-weight="bold" fill="#2E7D32">C - Phytochrome Interconversion</text>
+  
+  <!-- Pr -->
+  <circle cx="220" cy="340" r="30" fill="#64B5F6" stroke="#1565C0" stroke-width="2"/>
+  <text x="220" y="345" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">Pr</text>
+  <text x="220" y="360" text-anchor="middle" font-size="9" fill="#fff">λ660nm</text>
+  
+  <!-- Pfr -->
+  <circle cx="580" cy="340" r="30" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+  <text x="580" y="345" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">Pfr</text>
+  <text x="580" y="360" text-anchor="middle" font-size="9" fill="#fff">λ730nm</text>
+  
+  <!-- Arrows between -->
+  <path d="M255 330 L545 330" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="400" y="322" text-anchor="middle" font-size="11" fill="#E65100">Red Light (660nm)</text>
+  
+  <path d="M545 355 L255 355" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="400" y="372" text-anchor="middle" font-size="11" fill="#1565C0">Far-Red Light (730nm) / Darkness</text>
+  
+  <!-- Pfr action -->
+  <line x1="610" y1="340" x2="680" y2="340" stroke="#333" stroke-width="1.5"/>
+  <text x="685" y="335" font-size="10" fill="#333">D - Biological</text>
+  <text x="685" y="350" font-size="10" fill="#333">Response</text>
+  
+  <text x="220" y="395" text-anchor="middle" font-size="10" fill="#1565C0">Inactive Form</text>
+  <text x="580" y="395" text-anchor="middle" font-size="10" fill="#C62828">Active Form</text>
+  
+  <!-- Auxin section -->
+  <rect x="80" y="400" width="640" height="85" fill="#FCE4EC" rx="8" stroke="#C62828" stroke-width="2"/>
+  <text x="400" y="425" text-anchor="middle" font-size="14" font-weight="bold" fill="#C62828">E - Vernalization &amp; Hormones in Flowering</text>
+  <text x="400" y="448" text-anchor="middle" font-size="11" fill="#333">Vernalization: Low temp (0-5°C) → Promotes flowering in biennials (e.g., wheat)</text>
+  <text x="400" y="468" text-anchor="middle" font-size="11" fill="#333">Gibberellin: Can substitute for vernalization &amp; long day requirement</text>
+  <text x="400" y="485" text-anchor="middle" font-size="11" fill="#333">Florigen: Hypothetical flowering hormone produced in leaves, transported to shoot apex</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

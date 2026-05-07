@@ -14,108 +14,78 @@ const DiagramImage = ({ src, alt, caption }) => (
   </div>
 );
 
-// 1. Human Heart
-export const HeartDiagram = () => (
+// 1. Antibody Structure (Human Health and Disease)
+export const AntibodyDiagram = () => (
   <DiagramImage
-    src="heart.png"
-    alt="Diagram of the Human Heart showing all four chambers, valves, and blood vessels"
-    caption="Human Heart - Internal Structure"
+    src="antibody-structure.svg"
+    alt="Structure of an IgG antibody showing heavy chains, light chains, variable regions, Fc and Fab regions"
+    caption="Structure of Antibody (Immunoglobulin IgG)"
   />
 );
 
-// 2. Neuron
-export const NeuronDiagram = () => (
+// 2. Plasmodium Life Cycle (Human Health and Disease)
+export const PlasmodiumDiagram = () => (
   <DiagramImage
-    src="neuron.png"
-    alt="Structure of a multipolar neuron showing dendrites, cell body, axon, myelin sheath, and axon terminals"
-    caption="Structure of a Neuron"
+    src="plasmodium-lifecycle.svg"
+    alt="Life cycle of Plasmodium showing stages in human host and mosquito vector"
+    caption="Life Cycle of Plasmodium (Malarial Parasite)"
   />
 );
 
-// 3. Digestive System
-export const DigestiveSystemDiagram = () => (
+// 3. pBR322 Plasmid (Biotechnology)
+export const PBR322Diagram = () => (
   <DiagramImage
-    src="digestive.png"
-    alt="Human Digestive System showing mouth, oesophagus, stomach, liver, small intestine, large intestine"
-    caption="Human Digestive System"
+    src="pbr322-plasmid.svg"
+    alt="pBR322 plasmid vector map showing restriction sites, selectable markers, and ori"
+    caption="pBR322 Plasmid Vector Map"
   />
 );
 
-// 4. Plant Cell
-export const PlantCellDiagram = () => (
+// 4. Photoperiodism & Phytochrome (Plant Growth)
+export const PhotoperiodismDiagram = () => (
   <DiagramImage
-    src="plant-cell.png"
-    alt="Plant cell showing cell wall, chloroplast, mitochondria, vacuole, nucleus, and other organelles"
-    caption="Plant Cell Structure"
+    src="photoperiodism.svg"
+    alt="Photoperiodism in SDP and LDP with phytochrome interconversion system"
+    caption="Photoperiodism & Phytochrome System"
   />
 );
 
-// 5. Excretory System
-export const ExcretoryDiagram = () => (
+// 5. Z-Scheme of Light Reactions (Photosynthesis)
+export const ZSchemeDiagram = () => (
   <DiagramImage
-    src="excretory.png"
-    alt="Human Excretory System showing kidneys, ureters, bladder, and urethra"
-    caption="Human Excretory System"
+    src="z-scheme.svg"
+    alt="Z-scheme showing non-cyclic electron flow through PS II, cytochrome b6f, and PS I"
+    caption="Z-Scheme of Light Reactions (Non-cyclic Photophosphorylation)"
   />
 );
 
-// 6. Flower Parts
-export const FlowerDiagram = () => (
+// 6. Embryo Sac (Sexual Reproduction in Flowering Plants)
+export const EmbryoSacDiagram = () => (
   <DiagramImage
-    src="flower.png"
-    alt="Longitudinal section of a flower showing petals, sepals, stamens, pistil, ovary, and ovules"
-    caption="L.S. of a Flower"
+    src="embryo-sac.svg"
+    alt="Structure of mature embryo sac showing egg apparatus, central cell, and antipodals"
+    caption="Mature Embryo Sac (7-celled, 8-nucleate)"
   />
 );
 
-// 7. Respiratory System
-export const RespiratoryDiagram = () => (
+// 7. Human Reproduction
+export const HumanReproDiagram = () => (
   <DiagramImage
-    src="respiratory.png"
-    alt="Human Respiratory System showing nasal cavity, trachea, bronchi, lungs, and diaphragm"
-    caption="Human Respiratory System"
-  />
-);
-
-// 8. Human Brain
-export const BrainDiagram = () => (
-  <DiagramImage
-    src="brain.png"
-    alt="Human brain showing cerebrum, cerebellum, medulla oblongata, and pons"
-    caption="Human Brain"
-  />
-);
-
-// 9. Human Eye
-export const EyeDiagram = () => (
-  <DiagramImage
-    src="eye.png"
-    alt="Human eye cross section showing cornea, lens, retina, optic nerve, iris, and pupil"
-    caption="Human Eye (Cross Section)"
-  />
-);
-
-// 10. Xylem and Phloem
-export const XylemPhloemDiagram = () => (
-  <DiagramImage
-    src="xylem-phloem.png"
-    alt="Xylem and Phloem transport tissue in plants"
-    caption="Xylem & Phloem (Vascular Tissue)"
+    src="human-reproduction.svg"
+    alt="Human sperm structure and menstrual cycle phases with hormone levels"
+    caption="Human Reproductive System & Gametogenesis"
   />
 );
 
 // Map diagramHint strings to components
 const diagramByHint = {
-  "Human Heart diagram": HeartDiagram,
-  "Structure of Neuron": NeuronDiagram,
-  "Human Digestive System": DigestiveSystemDiagram,
-  "Plant Cell": PlantCellDiagram,
-  "Human Excretory System": ExcretoryDiagram,
-  "Parts of a Flower": FlowerDiagram,
-  "Human Respiratory System": RespiratoryDiagram,
-  "Human Brain": BrainDiagram,
-  "Human Eye": EyeDiagram,
-  "Cross-section of Stem (Xylem & Phloem)": XylemPhloemDiagram,
+  "Life Cycle of Plasmodium": PlasmodiumDiagram,
+  "Antibody Structure": AntibodyDiagram,
+  "pBR322 Plasmid Vector": PBR322Diagram,
+  "Photoperiodism and Phytochrome": PhotoperiodismDiagram,
+  "Z-Scheme of Light Reactions": ZSchemeDiagram,
+  "Embryo Sac Structure": EmbryoSacDiagram,
+  "Human Reproduction Diagram": HumanReproDiagram,
 };
 
 export function getDiagramComponent(diagramHint) {

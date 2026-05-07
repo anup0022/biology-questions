@@ -3,6 +3,7 @@ import "./App.css";
 import questions from "./data/questions";
 import { generateDoc } from "./utils/generateDoc";
 import { generatePpt } from "./utils/generatePpt";
+import diagramByHint, { getDiagramComponent } from "./components/Diagrams";
 
 function App() {
   const [activeTab, setActiveTab] = useState("all");
@@ -35,11 +36,11 @@ function App() {
   };
 
   const getTypeLabel = (type) => {
-    return "Objective";
+    return "Diagram Based";
   };
 
   const getTypeColor = (type) => {
-    return "tag-green";
+    return "tag-blue";
   };
 
   const toggleSelect = (id) => {
@@ -131,10 +132,10 @@ function App() {
           <h1 className="hero-title">
             Biology
             <br />
-            <span className="hero-title-accent">MCQ Question Bank</span>
+            <span className="hero-title-accent">Diagram-Based MCQs</span>
           </h1>
           <p className="hero-subtitle">
-            60 Hard-Level MCQs &mdash; 6 Topics | Select the correct answer
+            30 Hard-Level Diagram Questions &mdash; 6 Topics
           </p>
           <div className="hero-stats">
             <div className="stat">
@@ -143,7 +144,7 @@ function App() {
             </div>
             <div className="stat-divider"></div>
             <div className="stat">
-              <span className="stat-number">60</span>
+              <span className="stat-number">30</span>
               <span className="stat-label">Questions</span>
             </div>
             <div className="stat-divider"></div>
@@ -245,37 +246,37 @@ function App() {
             className={`filter-tab ${activeTab === "humanHealth" ? "active" : ""}`}
             onClick={() => setActiveTab("humanHealth")}
           >
-            Human Health <span className="tab-count">10</span>
+            Human Health <span className="tab-count">5</span>
           </button>
           <button
             className={`filter-tab ${activeTab === "biotech" ? "active" : ""}`}
             onClick={() => setActiveTab("biotech")}
           >
-            Biotechnology <span className="tab-count">10</span>
+            Biotechnology <span className="tab-count">5</span>
           </button>
           <button
             className={`filter-tab ${activeTab === "plantGrowth" ? "active" : ""}`}
             onClick={() => setActiveTab("plantGrowth")}
           >
-            Plant Growth <span className="tab-count">10</span>
+            Plant Growth <span className="tab-count">5</span>
           </button>
           <button
             className={`filter-tab ${activeTab === "photosynthesis" ? "active" : ""}`}
             onClick={() => setActiveTab("photosynthesis")}
           >
-            Photosynthesis <span className="tab-count">10</span>
+            Photosynthesis <span className="tab-count">5</span>
           </button>
           <button
             className={`filter-tab ${activeTab === "sexualRepro" ? "active" : ""}`}
             onClick={() => setActiveTab("sexualRepro")}
           >
-            Sexual Repro. <span className="tab-count">10</span>
+            Sexual Repro. <span className="tab-count">5</span>
           </button>
           <button
             className={`filter-tab ${activeTab === "humanRepro" ? "active" : ""}`}
             onClick={() => setActiveTab("humanRepro")}
           >
-            Human Repro. <span className="tab-count">10</span>
+            Human Repro. <span className="tab-count">5</span>
           </button>
         </div>
       </section>
@@ -337,6 +338,21 @@ function App() {
                   </div>
                   <div className="card-body">
                     <p className="question-text">{q.question}</p>
+                    {q.diagramHint && getDiagramComponent(q.diagramHint) && (
+                      <div className="diagram-container">
+                        {React.createElement(getDiagramComponent(q.diagramHint))}
+                      </div>
+                    )}
+                    {q.diagramHint && (
+                      <div className="diagram-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="hint-icon">
+                          <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                          <circle cx="8.5" cy="8.5" r="1.5" />
+                          <polyline points="21,15 16,10 5,21" />
+                        </svg>
+                        {q.diagramHint}
+                      </div>
+                    )}
                     <div className="options-grid">
                       {q.options.map((opt, optIdx) => {
                         const isSelected = userAnswer === optIdx;
@@ -408,9 +424,9 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
-          <p>Biology MCQ Question Bank &mdash; Class 11 &amp; 12</p>
+          <p>Biology Diagram-Based MCQs &mdash; Class 11 &amp; 12</p>
           <p className="footer-sub">
-            60 Questions | Select &amp; Download in DOC or PPT
+            30 Questions | Select &amp; Download in DOC or PPT
           </p>
         </div>
       </footer>

@@ -2,16 +2,13 @@ import PptxGenJS from "pptxgenjs";
 
 // Map diagramHint to image filenames
 const diagramImageMap = {
-  "Human Heart diagram": "heart.png",
-  "Structure of Neuron": "neuron.png",
-  "Human Digestive System": "digestive.png",
-  "Plant Cell": "plant-cell.png",
-  "Human Excretory System": "excretory.png",
-  "Parts of a Flower": "flower.png",
-  "Human Respiratory System": "respiratory.png",
-  "Human Brain": "brain.png",
-  "Human Eye": "eye.png",
-  "Cross-section of Stem (Xylem & Phloem)": "xylem-phloem.png",
+  "Life Cycle of Plasmodium": "plasmodium-lifecycle.svg",
+  "Antibody Structure": "antibody-structure.svg",
+  "pBR322 Plasmid Vector": "pbr322-plasmid.svg",
+  "Photoperiodism and Phytochrome": "photoperiodism.svg",
+  "Z-Scheme of Light Reactions": "z-scheme.svg",
+  "Embryo Sac Structure": "embryo-sac.svg",
+  "Human Reproduction Diagram": "human-reproduction.svg",
 };
 
 // Convert image file to base64 data URL
