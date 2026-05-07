@@ -100,13 +100,13 @@ function App() {
     generateDoc(selected);
   };
 
-  const handleDownloadPpt = () => {
+  const handleDownloadPpt = async () => {
     const selected = getSelectedQuestions();
     if (selected.length === 0) {
       alert("Please select at least one question to download.");
       return;
     }
-    generatePpt(selected);
+    await generatePpt(selected);
   };
 
   const getScore = () => {
